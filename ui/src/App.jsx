@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="container" style={{ textAlign: "center", color: "#10069F", fontFamily: "sans-serif" }}>
       <h1 style={{ fontSize: "48px" }}>Twitter support for save soil</h1>
-      <ul style={{ marginTop: "1rem", fontSize: "24px" }}>
+      <ul style={{ marginTop: "1rem", fontSize: "24px", listStyle: "none" }}>
         {tweets && tweets.map((t, idx) =>
           <>
             <br />
