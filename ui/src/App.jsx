@@ -19,21 +19,22 @@ function App() {
       .catch(err => console.error(err))
   }, [])
   return (
-    <>
-      <h1>Twitter support for save soil</h1>
-      <ul>
+    <div className="container" style={{ textAlign: "center", color: "#10069F", fontFamily: "sans-serif" }}>
+      <h1 style={{ fontSize: "48px" }}>Twitter support for save soil</h1>
+      <ul style={{ marginTop: "1rem", fontSize: "24px" }}>
         {tweets && tweets.map((t, idx) =>
           <>
             <br />
             <br />
             <br />
+
             <li>
               <a href={"https://twitter.com/SadhguruJV/status/" + t.id}>{t.tweet}</a>
             </li>
           </>
         )}
       </ul>
-    </>
+    </div>
   )
 }
 
